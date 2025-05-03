@@ -155,9 +155,10 @@ body{
           </a>
         </div>
 </div>
+	  <hr>
 <section id="Web-layout">
 	<h2>Link To Web Portfolio</h2>
-	<hr>
+	
 <div class="web-link">
 	<p>
         <button type="button" class="btn btn-primary btn-lg"><a href="https://yourdesigningspace.com/" target="_blank">Web Design</a></button>
@@ -179,7 +180,7 @@ body{
           <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
         </ul> -->
-        <p class="text-center border-top pb-3 pt-4 mb-3 text-body-secondary">© 2025 Liamoh Thomas All Right Reserved</p>
+        <p id="changeYear" class="text-center border-top pb-3 pt-4 mb-3 text-body-secondary">© 2025 Liamoh Thomas All Right Reserved</p>
       </footer>
     </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -205,6 +206,9 @@ body{
 			})();
 
 		});
+		let currentYear = new Date();
+		let newYear = currentYear.setFullYear();
+		document.querySelector("#changeYear").innerHTML = newYear;
 	</script>
 </body>
 </html>
